@@ -48,7 +48,7 @@ const Hero = () => {
           <p className=" text-4xl font-bold ">
             Be prepared for the <br /> Mountains and <br /> beyond!
           </p>
-          <p className=" flex gap-3 text-sm font-semibold">
+          <p className=" flex gap-3 text-sm  items-center font-semibold">
             scroll down
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,9 @@ const Hero = () => {
             </svg>
           </p>
         </div>
-        <p className=" absolute left-0 rightText">instegram</p>
+        <p className=" absolute left-0 rightText capitalize font-semibold">
+          Follow us{" "}
+        </p>
       </div>
     </section>
   );
