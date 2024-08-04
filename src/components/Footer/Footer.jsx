@@ -2,26 +2,33 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <section>
-      <div className="container relative max-xl mx-auto flex   items-center justify-center ">
+      <div className="container relative px-24  mx-auto flex h-56   items-center  justify-between py-5 ">
         {/* left */}
-        <div>
-          <div>
+        <div className=" flex flex-col    h-full  justify-between items-start">
+          <div className=" space-y-">
             <p className=" font-bold">MNTN</p>
-            <p className=" text-sm font-semibold max-w-xs">
+            <p className=" text-sm font-semibold  max-w-xs">
               Get out there & discover your next slope, mountain & destination!
             </p>
           </div>
-
-          <p className=" font-semibold opacity-20">
-            Copyright 2024 MNTN, inc <span> Terms & Privacy</span>{" "}
-          </p>
+          <div>
+            <p className=" font-semibold opacity-20 text-sm ">
+              Copyright 2024 MNTN, inc <span> Terms & Privacy</span>{" "}
+            </p>
+            <p className=" font-semibold opacity-20 text-sm ">
+              Dev by <a href="">ChicoDev</a>{" "}
+            </p>
+          </div>
         </div>
         {/* right */}
-        <div>
+        <div
+          className=" flex  h-full gap-40
+        "
+        >
           {/* right left */}
-          <div>
-            <p className=" text-yellow-400 font-semibold ">More on The Blog</p>
-            <ul>
+          <div className=" space-y-3">
+            <p className=" text-yellow-400 font-semibold  ">More on The Blog</p>
+            <ul className=" text-sm space-y-2">
               <li>
                 <a href="link">About MNTN</a>
               </li>{" "}
@@ -41,9 +48,9 @@ const Footer = () => {
           </div>
           {/* right right */}
 
-          <div>
+          <div className=" space-y-3">
             <p className=" text-yellow-400 font-semibold "> More on MNTN</p>
-            <ul>
+            <ul className=" text-sm space-y-2">
               <li>
                 <a href="link">The Team</a>
               </li>
