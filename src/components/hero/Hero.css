@@ -1,0 +1,16 @@
+.hero {
+  text-transform: uppercase;
+  background: linear-gradient(rgba(255, 251, 251, 0.2), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1463694775559-eea25626346b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rightText {
+  top: 50%;
+  rotate: 90deg;
+  transform: translate(0%, 100%);
+  -webkit-transform: translate(0%, 100%);
+  -moz-transform: translate(0%, 100%);
+  -ms-transform: translate(0%, 100%);
+  -o-transform: translate(0%, 100%);
+}
