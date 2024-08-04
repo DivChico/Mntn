@@ -21,10 +21,17 @@ const SectionTemp = ({
             {number}
           </p>
 
-          <p className=" text-yellow-400 font-semibold uppercase">{heading}</p>
-          <p className=" font-bold max-w-sm text-3xl">{title}</p>
+          <p className=" text-yellow-400  font-semibold headingText uppercase flex items-center tracking-widest">
+            <span className=" pl-16 text-yellow-400">{heading}</span>
+          </p>
+          <p
+            className=" font-bold max-w-sm text-3xl"
+            style={{ fontFamily: "PlayfairDisplay" }}
+          >
+            {title}
+          </p>
           <p className=" text-sm max-w-xl">{desc}</p>
-          <p className="text-yellow-400 font-semibold text-sm flex gap-3  items-center ">
+          <p className=" tracking-widest text-yellow-400 font-semibold text-sm flex gap-3  items-center ">
             read more{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -5,8 +5,10 @@ const Footer = () => {
       <div className="container relative px-24  mx-auto flex h-56   items-center  justify-between py-5 ">
         {/* left */}
         <div className=" flex flex-col    h-full  justify-between items-start">
-          <div className=" space-y-">
-            <p className=" font-bold">MNTN</p>
+          <div className=" space-y-2">
+            <p className=" font-bold" style={{ fontFamily: "PlayfairDisplay" }}>
+              MNTN
+            </p>
             <p className=" text-sm font-semibold  max-w-xs">
               Get out there & discover your next slope, mountain & destination!
             </p>

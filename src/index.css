@@ -4,3 +4,27 @@
 * {
   color: white;
 }
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("RubikScribble-Regular"),
+    url("./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "CormorantGaramond";
+  src: local("CormorantGaramond-Regular"),
+    url("./assets/fonts/CormorantGaramond-Regular.ttf");
+}
+
+.headingText:before {
+  border: 1xp solid;
+  content: " ";
+  display: block;
+  height: 5px;
+  width: 60px;
+  position: relative;
+  top: 50%;
+  left: 0;
+  background: #facc15;
+}
