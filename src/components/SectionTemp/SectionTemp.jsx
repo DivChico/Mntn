@@ -1,5 +1,6 @@
 import React from "react";
 import "./SectionTemp.css";
+import { motion } from "framer-motion";
 
 const SectionTemp = ({
   isImageRight,
@@ -10,13 +11,18 @@ const SectionTemp = ({
   number,
 }) => {
   return (
-    <section className="sectionTemp md:h-screen flex items-center justify-center   ">
+    <section className="sectionTemp md:h-screen flex items-center justify-center overflow-hidden  ">
       <div
         className={`container relative max-xl flex-col md:flex-row p-10 md:p-0  flex ${
           isImageRight ? "" : "  md:flex-row-reverse"
         } items-center gap-28 justify-center  mx-auto `}
       >
-        <div className=" space-y-5 relative  ">
+        <motion.div
+          initial={{ x: isImageRight ? -200 : 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className=" space-y-5 relative  "
+        >
           <p className=" text-9xl absolute -top-10 -left-10 font-bold opacity-20">
             {number}
           </p>
@@ -46,10 +52,14 @@ const SectionTemp = ({
               />
             </svg>
           </p>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <img className="  md:max-w-96" src={imageLink} alt={title} />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

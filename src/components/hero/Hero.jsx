@@ -4,6 +4,8 @@ import "../../assets/fonts/CormorantGaramond-Regular.ttf";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <section className="h-screen  hero py-4 shadow-inner  ">
@@ -39,7 +41,12 @@ const Hero = () => {
             </div>
           </a>
         </header>
-        <div className="flex flex-col gap-2  justify-center items-center md:justify-normal md:items-start ">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="flex flex-col gap-2  justify-center items-center md:justify-normal md:items-start "
+        >
           <p className=" text-yellow-400 font-semibold uppercase tracking-widest headingText">
             <span className=" pl-16 text-yellow-400">A hiking guide</span>
           </p>
@@ -66,17 +73,23 @@ const Hero = () => {
               />
             </svg>
           </p>
-        </div>
-        <p className=" absolute gap-x-2 rotate-90  left-0 md:top-1/2 top-2/3  flex  items-center  rightText capitalize font-semibold">
-          <p> Follow us</p>
-          <div className="  -rotate-90">
-            <InstagramIcon />
-          </div>
-          <div className="  -rotate-90">
-            {" "}
-            <TwitterIcon />
-          </div>
-        </p>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          <p className=" absolute gap-x-2 rotate-90  left-0 md:top-1/2 top-2/3  flex  items-center  rightText capitalize font-semibold">
+            <p> Follow us</p>
+            <div className="  -rotate-90">
+              <InstagramIcon />
+            </div>
+            <div className="  -rotate-90">
+              {" "}
+              <TwitterIcon />
+            </div>
+          </p>
+        </motion.div>
       </div>
     </section>
   );
