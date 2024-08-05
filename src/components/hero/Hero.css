@@ -6,21 +6,9 @@
   background-size: cover;
 }
 .rightText {
-  top: 50%;
-  rotate: 90deg;
   transform: translate(0%, 100%);
   -webkit-transform: translate(0%, 100%);
   -moz-transform: translate(0%, 100%);
   -ms-transform: translate(0%, 100%);
   -o-transform: translate(0%, 100%);
-}
-.headingText:before {
-  content: " ";
-  display: block;
-  height: 4px;
-  width: 60px;
-  position: relative;
-  top: 50%;
-  left: 0;
-  background: #facc15;
 }

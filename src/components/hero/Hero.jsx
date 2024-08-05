@@ -3,18 +3,19 @@ import "../../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf";
 import "../../assets/fonts/CormorantGaramond-Regular.ttf";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
 const Hero = () => {
   return (
     <section className="h-screen  hero py-4 shadow-inner  ">
       <div className="container relative max-xl: mx-auto flex flex-col  items-center justify-center h-full">
-        <header className=" top-0  w-full absolute   flex items-center justify-between">
+        <header className=" top-0  w-full absolute   flex items-center  justify-center md:justify-between">
           <p
-            className=" text-xl font-bold capitalize"
+            className=" text-3xl font-bold capitalize "
             style={{ fontFamily: "PlayfairDisplay" }}
           >
             MNTN
           </p>
-          <nav>
+          <nav className="  hidden md:block">
             <ul className="flex items-center gap-10 text-lg font-semibold">
               <li>
                 <a href="#Eq" className="outline-4">
@@ -31,30 +32,19 @@ const Hero = () => {
               </li>
             </ul>
           </nav>
-          <div className="flex items-center justify-center gap-2 text-lg font-semibold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-              />
-            </svg>
-            Account
-          </div>
+          <a href="https://github.com/DivChico" target="_blank">
+            <div className=" hidden md:flex items-center justify-center capitalize gap-2 text-lg font-semibold cursor-pointer">
+              <GitHubIcon />
+              DivChico
+            </div>
+          </a>
         </header>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2  justify-center items-center md:justify-normal md:items-start ">
           <p className=" text-yellow-400 font-semibold uppercase tracking-widest headingText">
             <span className=" pl-16 text-yellow-400">A hiking guide</span>
           </p>
           <p
-            className=" text-4xl font-bold capitalize  tracking-widest "
+            className=" text-3xl md:text-4xl font-bold capitalize max-w-sm  tracking-widest text-center md:text-left "
             style={{ fontFamily: "PlayfairDisplay" }}
           >
             Be prepared for the <br /> Mountains and <br /> beyond!
@@ -77,13 +67,12 @@ const Hero = () => {
             </svg>
           </p>
         </div>
-        <p className=" absolute left-0 flex  items-center  rightText capitalize font-semibold">
+        <p className=" absolute gap-x-2 rotate-90  left-0 md:top-1/2 top-2/3  flex  items-center  rightText capitalize font-semibold">
           <p> Follow us</p>
-          <div>
-            {" "}
+          <div className="  -rotate-90">
             <InstagramIcon />
           </div>
-          <div>
+          <div className="  -rotate-90">
             {" "}
             <TwitterIcon />
           </div>

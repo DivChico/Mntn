@@ -10,13 +10,13 @@ const SectionTemp = ({
   number,
 }) => {
   return (
-    <section className="sectionTemp h-screen flex items-center justify-center   ">
+    <section className="sectionTemp md:h-screen flex items-center justify-center   ">
       <div
-        className={`container relative max-xl flex ${
-          isImageRight ? "" : " flex-row-reverse"
+        className={`container relative max-xl flex-col md:flex-row p-10 md:p-0  flex ${
+          isImageRight ? "" : "  md:flex-row-reverse"
         } items-center gap-28 justify-center  mx-auto `}
       >
-        <div className=" space-y-5 relative">
+        <div className=" space-y-5 relative  ">
           <p className=" text-9xl absolute -top-10 -left-10 font-bold opacity-20">
             {number}
           </p>
@@ -48,7 +48,7 @@ const SectionTemp = ({
           </p>
         </div>
         <div>
-          <img className=" max-w-96" src={imageLink} alt={title} />
+          <img className="  md:max-w-96" src={imageLink} alt={title} />
         </div>
       </div>
     </section>
